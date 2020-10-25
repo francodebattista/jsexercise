@@ -1,11 +1,24 @@
 //Variables y Operadores
 //Crear dos variables numéricas y utilizar el operador suma para guardar el valor de la suma de ambos números en una 3er variable.
+var a = 10;
+var b = 11;
+var c = a+b;
 
 //Crear dos variables de tipo String y concatenarlas guardando el resultado en una 3er variable.
+var name = "Franco ";
+var surname = "De Battista";
+var fullname = name + surname;
+console.log(fullname)
 
 /*Crear dos variables de tipo String y sumar el largo de cada variable (cantidad de letras del string) guardando el 
 resultado la suma una 3er variable (utilizar length).
 */
+var name = "Franco";
+var surname = "De Battista";
+var numberOfLetters = name.length+surname.length
+console.log(name.length)
+console.log(surname.length)
+console.log(numberOfLetters)
 
 //Strings
 //Crear una variable de tipo string con al menos 10 caracteres y convertir todo el texto en mayúscula (utilizar toUpperCase).
