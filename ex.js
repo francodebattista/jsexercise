@@ -20,6 +20,7 @@ console.log(name.length);
 console.log(surname.length);
 console.log(numberOfLetters);
 
+
 //******************** Strings ********************
 //Crear una variable de tipo string con al menos 10 caracteres y convertir todo el texto en mayúscula (utilizar toUpperCase).
 var surname = "De Battista";
@@ -60,21 +61,40 @@ console.log(solution);
 //******************** Arrays ********************
 //Dado el siguiente array: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"] 
 //mostrar por consola los meses 5 y 11 (utilizar console.log)
+var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+
+console.log(months[5] + " " + months[11]);
 
 //Ordenar el array de meses alfabéticamente y mostrarlo por consola (utilizar sort).
+console.log(months.sort());
 
 //Agregar un elemento al principio y al final del array (utilizar unshift y push).
+var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+months.push("last year");
+console.log(months);
+months.unshift("first year");
+console.log(months);
 
 //Quitar un elemento del principio y del final del array (utilizar shift y pop).
+months.pop();
+console.log(months);
+months.shift();
+console.log(months);
 
 //Invertir el orden del array (utilizar reverse)
+console.log(months.reverse());
 
 //Unir todos los elementos del array en un único string donde cada mes este separado por un guión - (utilizar join).
+var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+var listMonths = months.join(" - ");
+console.log(listMonths);
 
 //Crear una copia del array de meses que contenga desde Mayo hasta Noviembre (utilizar slice).
+var monthsSlice = months.slice(4,11)
+console.log(monthsSlice);
 
 
-//If Else
+//******************** If Else ********************
 /*Crear un número aleatorio entre 0 y 1 utilizando la función Math.random(), si el valor es mayor o igual que 0,5 mostrar una alerta con el mensaje 
 “Greater than 0,5” y sino un alerta con el mensaje “Lower than 0,5”*/
 //Crear una variable “Age” que contenga un número entero entre 0 y 100 y muestre los siguientes mensajes de alerta:
