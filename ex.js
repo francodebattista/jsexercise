@@ -1,4 +1,4 @@
-//Variables y Operadores
+////******************** Variables y Operadores ********************
 //Crear dos variables numéricas y utilizar el operador suma para guardar el valor de la suma de ambos números en una 3er variable.
 var a = 10;
 var b = 11;
@@ -15,31 +15,49 @@ resultado la suma una 3er variable (utilizar length).
 */
 var name = "Franco";
 var surname = "De Battista";
-var numberOfLetters = name.length+surname.length
-console.log(name.length)
-console.log(surname.length)
-console.log(numberOfLetters)
+var numberOfLetters = name.length + surname.length;
+console.log(name.length);
+console.log(surname.length);
+console.log(numberOfLetters);
 
-//Strings
+//******************** Strings ********************
 //Crear una variable de tipo string con al menos 10 caracteres y convertir todo el texto en mayúscula (utilizar toUpperCase).
+var surname = "De Battista";
+console.log(surname.toUpperCase());
 
 /*Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con los primeros 5 caracteres guardando 
 el resultado en una nueva variable (utilizar substring).*/
+var surname = "De Battista";
+var nickname = surname.substring(0,5);
+console.log(nickname);
 
 /*Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con los últimos 3 caracteres guardando el 
 resultado en una nueva variable (utilizar substring).*/
+var surname = "De Battista";
+var nickname = surname.substring(8,11);
+console.log(nickname);
 
 /*Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con la primera letra en mayúscula y las demás 
 en minúscula. Guardar el resultado en una nueva variable (utilizar substring, toUpperCase, toLowerCase y el operador +).*/
+var surname = "de battista";
+var lastName = surname.substring(0,1).toUpperCase()+surname.substring(1,11).toLowerCase();
+console.log(lastName);
 
 /*Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco. Encontrar la posición del primer
 espacio en blanco y guardarla en una variable (utilizar indexOf).*/
+var surname = "de battista";
+var firstBlank = surname.indexOf(" ");
+console.log(firstBlank);
 
 /*Crear una variable de tipo string con al menos 2 palabras largas (10 caracteres y algún espacio entre medio). Utilizar los 
 métodos de los ejercicios anteriores para generar un nuevo string que tenga la primera letra de ambas palabras en mayúscula 
 y las demás letras en minúscula (utilizar indexOf, substring, toUpperCase, toLowerCase y el operador +).*/
+var firstSentence = "technology revolution";
+var solution = firstSentence.substring(0,1).toUpperCase() + firstSentence.substring(1,11).toLowerCase() + firstSentence.substring(11,12).toUpperCase() + firstSentence.substring(12,21).toLowerCase();
+console.log(solution);
 
-//Arrays
+
+//******************** Arrays ********************
 //Dado el siguiente array: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"] 
 //mostrar por consola los meses 5 y 11 (utilizar console.log)
 
