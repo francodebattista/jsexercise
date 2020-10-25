@@ -91,7 +91,7 @@ var listMonths = months.join(" - ");
 console.log(listMonths);
 
 //Crear una copia del array de meses que contenga desde Mayo hasta Noviembre (utilizar slice).
-var monthsSlice = months.slice(4,11)
+var monthsSlice = months.slice(4,11);
 console.log(monthsSlice);
 
 
@@ -99,7 +99,7 @@ console.log(monthsSlice);
 /*Crear un número aleatorio entre 0 y 1 utilizando la función Math.random(), 
 si el valor es mayor o igual que 0,5 mostrar una alerta con el mensaje 
 “Greater than 0,5” y sino un alerta con el mensaje “Lower than 0,5”*/
-var a = Math.random()
+var a = Math.random();
 console.log (a)
 if(a>=0.5){
     console.log("Greater than 0,5")
@@ -118,7 +118,7 @@ los siguientes mensajes de alerta:
 “Adulto mayor” entre 61 y 75 años
 “Anciano” si es mayor a 75 años
 */
-var age = 76
+var age = 76;
 
 if(age < 2){
     console.log("Bebe")
@@ -136,21 +136,44 @@ if(age < 2){
     console.log("Anciano") 
 }
 
-
 // ******************** For ********************
-//Crear un array que contenga 5 palabras y recorrer dicho array utilizando un bucle for de JavaScript para mostrar una alerta utilizando cada una de las palabras.
+/*Crear un array que contenga 5 palabras y recorrer dicho array utilizando un bucle for de
+JavaScript para mostrar una alerta utilizando cada una de las palabras.*/
+var firstNames = ["franco","valeria","fernando","mauricio","liliana"];
+/*
+for (a = 0; a <= firstNames.length-1; a++){
+    alert(firstNames[a])
+}
+*/
+/*Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar una 
+alerta por cada palabra modificada.*/
+/*
+for (a = 0; a <= firstNames.length-1; a++){
+    alert(firstNames[a].substring(0,1).toUpperCase()+firstNames[a].substring(1).toLowerCase())
+}
+*/
 
-//Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar una alerta por cada palabra modificada.
+/*Crear una variable llamada “sentence” que tenga un string vacío, luego al array del punto a) 
+recorrerlo con un bucle for para ir guardando cada palabra dentro de la variable sentence. 
+Al final mostrar una única alerta con la cadena completa.*/
+/*
+var sentence= [];
+for (a = 0; a <= firstNames.length-1; a++){
+    sentence.push(firstNames[a])
+}
+alert(sentence)
+*/
 
-/*Crear una variable llamada “sentence” que tenga un string vacío, luego al array del punto a) recorrerlo con un bucle for para ir 
-guardando cada palabra dentro de la variable sentence. Al final mostrar una única alerta con la cadena completa.*/
-
-/*Crear una array vacío y con un bucle for de 10 repeticiones llenar el array con el número de la repetición, es decir que al final de 
-la ejecución del bucle for deberia haber 10 elementos dentro del array, desde el número 0 hasta al numero 9. Mostrar por la consola del navegador 
-el al array final (utilizar console.log).*/
-
-
-//Funciones
+/*Crear una array vacío y con un bucle for de 10 repeticiones llenar el array con el número 
+de la repetición, es decir que al final de la ejecución del bucle for deberia haber 10 
+elementos dentro del array, desde el número 0 hasta al numero 9. Mostrar por la consola del 
+navegador el al array final (utilizar console.log).*/
+var a =[]
+for(i=0;i<=9;i++){
+    a.push(i)
+}
+console.log(a)
+//******************** Funciones ********************
 /*Crear una función suma que reciba dos valores numéricos y retorne el resultado. Ejecutar la función y guardar el resultado en una variable, mostrando el valor 
 de dicha variable en la consola del navegador.*/
 
