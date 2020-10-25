@@ -1,3 +1,4 @@
+
 ////******************** Variables y Operadores ********************
 //Crear dos variables numéricas y utilizar el operador suma para guardar el valor de la suma de ambos números en una 3er variable.
 var a = 10;
@@ -95,10 +96,20 @@ console.log(monthsSlice);
 
 
 //******************** If Else ********************
-/*Crear un número aleatorio entre 0 y 1 utilizando la función Math.random(), si el valor es mayor o igual que 0,5 mostrar una alerta con el mensaje 
+/*Crear un número aleatorio entre 0 y 1 utilizando la función Math.random(), 
+si el valor es mayor o igual que 0,5 mostrar una alerta con el mensaje 
 “Greater than 0,5” y sino un alerta con el mensaje “Lower than 0,5”*/
-//Crear una variable “Age” que contenga un número entero entre 0 y 100 y muestre los siguientes mensajes de alerta:
-/*
+var a = Math.random()
+console.log (a)
+if(a>=0.5){
+    console.log("Greater than 0,5")
+} else {
+    console.log("Lower than 0,5")
+}
+
+/*Crear una variable “Age” que contenga un número entero entre 0 y 100 y muestre 
+los siguientes mensajes de alerta:
+
 “Bebe” si la edad es menor a 2 años
 “Nino” si la edad es entre 2 y 12 años
 “Adolecente” si la edad es entre 13 y 19 años
@@ -107,8 +118,26 @@ console.log(monthsSlice);
 “Adulto mayor” entre 61 y 75 años
 “Anciano” si es mayor a 75 años
 */
+var age = 76
 
-//For
+if(age < 2){
+    console.log("Bebe")
+} else if (age <= 12) {
+    console.log("Niño")
+}else if (age <= 19) {
+    console.log("Adolocente")
+}else if (age <= 30) {
+    console.log("Joven")
+}else if (age <=60) {
+    console.log("Adulto")
+}else if (age <=75) {
+    console.log("Adulto mayor")
+} else {
+    console.log("Anciano") 
+}
+
+
+// ******************** For ********************
 //Crear un array que contenga 5 palabras y recorrer dicho array utilizando un bucle for de JavaScript para mostrar una alerta utilizando cada una de las palabras.
 
 //Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar una alerta por cada palabra modificada.
