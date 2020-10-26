@@ -140,29 +140,26 @@ if(age < 2){
 /*Crear un array que contenga 5 palabras y recorrer dicho array utilizando un bucle for de
 JavaScript para mostrar una alerta utilizando cada una de las palabras.*/
 var firstNames = ["franco","valeria","fernando","mauricio","liliana"];
-/*
+
 for (a = 0; a <= firstNames.length-1; a++){
     alert(firstNames[a])
 }
-*/
+
 /*Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar una 
 alerta por cada palabra modificada.*/
-/*
+
 for (a = 0; a <= firstNames.length-1; a++){
     alert(firstNames[a].substring(0,1).toUpperCase()+firstNames[a].substring(1).toLowerCase())
 }
-*/
 
 /*Crear una variable llamada “sentence” que tenga un string vacío, luego al array del punto a) 
 recorrerlo con un bucle for para ir guardando cada palabra dentro de la variable sentence. 
 Al final mostrar una única alerta con la cadena completa.*/
-/*
 var sentence= [];
 for (a = 0; a <= firstNames.length-1; a++){
     sentence.push(firstNames[a])
 }
 alert(sentence)
-*/
 
 /*Crear una array vacío y con un bucle for de 10 repeticiones llenar el array con el número 
 de la repetición, es decir que al final de la ejecución del bucle for deberia haber 10 
@@ -221,7 +218,7 @@ function sumaOne (x, y) {
     if (validate (x + y)) {
         return x + y;
     } 
-   // alert("Some numbers are not integers so they are rounded to unit");
+        alert("Some numbers are not integers so they are rounded to unit");
     return Math.round(x + y)
 }
 console.log(sumaOne(4,10.56))
