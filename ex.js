@@ -168,22 +168,80 @@ alert(sentence)
 de la repetición, es decir que al final de la ejecución del bucle for deberia haber 10 
 elementos dentro del array, desde el número 0 hasta al numero 9. Mostrar por la consola del 
 navegador el al array final (utilizar console.log).*/
-var a =[]
+var a =[];
 for(i=0;i<=9;i++){
-    a.push(i)
+    a.push(i);
 }
 console.log(a)
 //******************** Funciones ********************
-/*Crear una función suma que reciba dos valores numéricos y retorne el resultado. Ejecutar la función y guardar el resultado en una variable, mostrando el valor 
+/*Crear una función suma que reciba dos valores numéricos y retorne el resultado. 
+Ejecutar la función y guardar el resultado en una variable, mostrando el valor 
 de dicha variable en la consola del navegador.*/
+function suma (x,y){
+    return x + y;
+}
+console.log(suma(20,10))
 
-/*A la función suma anterior, agregarle una validación para controlar si alguno de los parámetros no es un número, mostrar una alerta aclarando que uno de los 
-parámetros tiene error y retornar el valor NaN como resultado.*/
+/*A la función suma anterior, agregarle una validación para controlar si alguno de los 
+parámetros no es un número, mostrar una alerta aclarando que uno de los parámetros tiene 
+error y retornar el valor NaN como resultado.*/
+function suma (x, y) {
+    if (isNaN(x)) {
+      alert ("the first parameter is not a number");
+      return NaN;
+    } else if (isNaN(y)) {
+        alert ("the second parameter is not a number");
+        return NaN;
+    }
+    return x + y;
+}
+console.log(suma(10.4,10))
 
-//Crear una función validate integer que reciba un número como parámetro y verdadero si es un número entero.
+/*Crear una función validate integer que reciba un número como parámetro y verdadero 
+si es un número entero.*/
+function validate (z){
+    if (Number.isInteger(z)){
+        return true;
+    }
+    return false;
+}
+console.log(validate(47))
 
-/*A la función suma del ejercicio 6b) agregarle una llamada que valide que los números sean enteros. En caso que haya decimales mostrar un alerta con el error
-y retorna el número convertido a entero (redondeado).*/
+/*A la función suma del ejercicio 6b) agregarle una llamada que valide que los números 
+sean enteros. En caso que haya decimales mostrar un alerta con el error y retorna el número
+convertido a entero (redondeado).*/
+function sumaOne (x, y) {
+    if (isNaN(x)) {
+      alert ("the first parameter is not a number");
+      return NaN;
+    } else if (isNaN(y)) {
+        alert ("the second parameter is not a number");
+        return NaN;
+    }
+    if (validate (x + y)) {
+        return x + y;
+    } 
+   // alert("Some numbers are not integers so they are rounded to unit");
+    return Math.round(x + y)
+}
+console.log(sumaOne(4,10.56))
 
-//Convertir la validación del ejercicio 6b) en una función separada y llamarla dentro de la función suma probando que todo siga funcionando igual.
-
+/*Convertir la validación del ejercicio 6b) en una función separada y llamarla dentro de 
+la función suma probando que todo siga funcionando igual.*/
+function validateNumber (x, y) {
+    if (isNaN(x)) {
+      alert ("the first parameter is not a number");
+      return NaN;
+    } else if (isNaN(y)) {
+        alert ("the second parameter is not a number");
+        return NaN;
+    }
+}
+console.log(validateNumber)
+function sumaTwo (x, y){
+     if (validateNumber(x + y)){
+         return "is not a number"
+     }
+     return x + y
+}
+console.log(sumaTwo("fjals",5))
